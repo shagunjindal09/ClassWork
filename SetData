@@ -1,0 +1,25 @@
+package shagun;
+
+public class Room {
+	int roomno;
+	String Roomtype;
+	int roomArea;
+	String ACmachine;
+	void setData(int r,String rt,int rA,String Ac) {
+		roomno=r;
+		Roomtype=rt;
+		roomArea=rA;
+		ACmachine=Ac;
+	}
+	void displayData() {
+	System.out.println(roomno+" "+Roomtype+" "+roomArea+" "+ACmachine);	
+	}
+
+	public static void main(String[] args) {
+		Room r= new Room();
+		r.setData(12, "Single", 12,"Split");
+		
+		r.displayData();
+	}
+
+}
