@@ -1,0 +1,13 @@
+package shagun;
+
+public class SimpleObject {
+	SimpleObject(){
+		System.out.println("this is the message of constructor");
+	}
+
+	public static void main(String[] args) {
+SimpleObject s= new SimpleObject();		
+
+	}
+
+}
