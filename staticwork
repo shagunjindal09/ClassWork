@@ -1,0 +1,19 @@
+package shagun;
+
+public class StaticImplement {
+	static int x=10;
+	static {
+		System.out.println("this is the static block");
+	}
+	static void display() {
+		int z=11;
+		System.out.println(z);
+		System.out.println(x);
+	}
+
+	public static void main(String[] args) {
+
+     display();
+	}
+
+}
