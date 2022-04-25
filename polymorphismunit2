@@ -1,0 +1,52 @@
+package shagun;
+
+import java.util.*;
+
+class Shape{
+	void draw() {
+		System.out.println("draw a shape");
+	}
+	void erase() {
+		System.out.println("erase a shape");
+	}
+}
+class circle extends Shape{
+	Scanner sc = new Scanner(System.in);
+	float r=sc.nextFloat();
+	float res=(3.14f)*r*r;
+void c(){
+	System.out.println(res);
+}
+	
+	
+	
+}
+class Triangle extends Shape{
+		Scanner sc = new Scanner(System.in);
+
+	int b=sc.nextInt();
+	int h=sc.nextInt();
+	float area=0.5f*b*h;
+	void rec() {
+		System.out.println(area);
+	}
+	
+}
+class Square extends Shape{
+	Scanner sc = new Scanner(System.in);
+	//System.out.println("enter side");
+	int side=sc.nextInt();
+	void res(){
+		System.out.println(side*side);
+	}
+}
+public class PolymorphismTest {
+
+	public static void main(String[] args) {
+		Square s= new Square();
+		s.res();
+		s.draw();
+		s.erase();
+	}
+
+}
