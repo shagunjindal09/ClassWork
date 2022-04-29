@@ -1,0 +1,58 @@
+class Test{
+	private double j=30.0; 
+	int p;
+	Scanner sc = new Scanner(System.in);
+	int a =sc.nextInt();
+	boolean isZero(){
+		return true;
+	}
+	boolean isPositive() {
+		return true;
+	}
+	boolean isNegative() {
+		return false;
+	}
+	boolean isOdd() {
+		if(a*2!=0) {
+			return true;
+		
+		}
+		else {
+			return false;
+		}
+		
+	}
+	boolean isEven() {
+		if(a%2==0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
+	boolean isPrime() {
+		return true;
+	}
+	boolean isArmstrong() {
+		return true;
+	}
+}
+
+public class Number {
+
+	public static void main(String[] args) {
+		System.out.println("enter a value");
+		Test obj = new Test();
+		
+		obj.isArmstrong();
+		obj.isEven();
+		obj.isPositive();
+		obj.isNegative();
+		obj.isZero();
+        
+		
+    
+	}
+
+}
