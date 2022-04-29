@@ -1,0 +1,22 @@
+package shagun;
+interface Z{
+	void m1();
+}
+interface D{
+	void m1();
+}
+class C implements Z,D{
+public void m1() {
+	System.out.println("c class method");
+}
+	
+}
+public class multipleinheitanceTest {
+
+	public static void main(String[] args) {
+		C obj = new C();
+		obj.m1();
+
+	}
+
+}
