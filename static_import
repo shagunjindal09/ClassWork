@@ -1,0 +1,31 @@
+package shagun;
+
+public class static_class {
+	static int a=3;
+	static int b;
+	int c;
+	static_class(int c){
+		System.out.println("object created");
+		this.c=c;
+		
+	}
+	static {
+		System.out.println("static block initialised");
+		b=5;
+	}
+	public static void meth() {
+		System.out.println(b=a*4);
+		//System.out.println(this.c);
+		System.out.println("value  bof b is "+b);
+		System.out.println("value of non static variable is:+c");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		static_class s1= new static_class(3);
+		static_class.meth();
+		//System.out.println(this.b);
+
+	}
+
+}
