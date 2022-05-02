@@ -1,0 +1,40 @@
+package scopeofvar;
+
+class outer{
+	private int e_mem=10;
+	void outer_test() {
+		Nested n = new Nested();
+		n.nested_display();
+		System.out.println("instane variable of nested classb "+n.n_mem);
+Inner i = new Inner();
+i.inner_display();
+	}
+	static class Nested{
+		int n_mem=5;
+		void nested_display() {
+			System.out.println("instance variable"+n_mem);
+		//	System.out.println("private instance variable "+e_mem);
+			outer e = new outer();
+			System.out.println("instance variable "+e.e_mem);
+		}
+	}
+	class Inner{
+		void inner_display() {
+			System.out.println("inner class");
+		}
+	}
+}
+public class Enclosing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+outer e= new outer();
+e.outer_test();
+//Nested n = new Nested();
+outer.Nested en = new outer.Nested();
+en.nested_display();
+outer e1= new outer() ;
+outer.Inner i1= e1.new Inner();
+i1.inner_display();
+	}
+}
