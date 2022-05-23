@@ -1,0 +1,18 @@
+public class Exceptional {
+	void valid(int i) {
+		if(i<18)
+		{
+			throw new ArithmeticException("Invalid");
+		}
+		else {
+			System.out.println("VALID");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Exceptional e = new Exceptional();
+e.valid(23);
+	}
+
+}
