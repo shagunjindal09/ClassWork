@@ -1,0 +1,19 @@
+package shagun;
+class MyThread1 extends Thread{
+	public void run() {
+		System.out.println("override");
+	}
+}
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+MyThread1 obj = new MyThread1();
+MyThread1 obj1= new MyThread1();
+obj.start();
+obj.run();
+obj1.start();
+obj1.run();
+	}
+
+}
