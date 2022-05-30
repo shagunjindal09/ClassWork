@@ -1,0 +1,17 @@
+package shagun;
+class MyThread3 implements Runnable{
+	public void run() {
+		System.out.println("hey its overriden");
+	}
+}
+
+public class ThreadDemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    MyThread3 obj= new MyThread3();
+    Thread t = new Thread(obj);
+    t.run();
+	}
+
+}
