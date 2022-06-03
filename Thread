@@ -1,0 +1,25 @@
+package exceptionalhandling;
+
+public class Test1 extends Thread {
+
+	@Override
+	public void run() {
+		
+		  System.out.println(Thread.currentThread());
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test1 t1=new Test1();
+ 
+  t1.setName("shagun");
+ t1.start();
+// t1.run();
+  System.out.println(Thread.currentThread());
+  System.out.println(t1.getName());
+ 
+        
+	}
+
+}
