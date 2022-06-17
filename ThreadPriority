@@ -1,0 +1,18 @@
+package exceptionalhandling;
+
+public class Mutithread extends Thread{
+  public void run() {
+	  System.out.println("Run");
+	  }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mutithread t1= new Mutithread();
+		Mutithread t= new Mutithread();
+		t.start();
+		t1.start();
+		t.setPriority(3);
+         t1.setPriority(6);
+      
+	}
+
+}
