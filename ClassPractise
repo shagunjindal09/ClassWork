@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practise</title>
+</head>
+<body>
+
+<h1>Member Details</h1>
+<table border="2">
+<tr>
+<th> Group </th>
+<th> Avatar </th>
+<th> Name </th>
+<th> Email </th>
+<th> Character </th>
+<th> Profile </th>
+
+</tr>
+<tr >
+<td rowspan="4"> Ninja </td>
+<td rowspan="2" style="color:red"> Red Color </td>
+<td> Shagun </td>
+<td > jindalshagun01@gmail.com </td>
+<td rowspan="2"> @ </td>
+<td rowspan="2"> <a href="www.google.com"> click me </a> </td>
+</tr>
+<tr>
+
+<td> Soumya </td>
+
+<td> jindalsoumya01@gmail.com</td>
+</tr>
+<tr>
+<td rowspan="2" style="color:blue"> Blue</td>
+<td > Shedy </td>
+
+<td rowspan="2"> jindalshagun89@gmail.com</td>
+<td rowspan="2">  TM </td>
+<td rowspan="2"> <a href="www.google.com"> click me </a> </td>
+
+</tr>
+<tr>
+<td> shaby </td>
+</tr>
+<tr>
+<td> Monster</td>
+<td style="color:Black"> Black </td>
+<td> himanshu </td>
+<td> swe12@gmail.com </td>
+<td> # </td>
+<td > <a href="www.google.com"> click me </a> </td>
+</tr>
+<tr>
+<td colspan="6"> Total members </td>
+</tr>
+</table>
+</body>
+</html>
+
+
