@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{Assignment1}
+\author{shagun.2124mca1045 }
+\date{September 2022}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\large
+In the first class we were learn about the colaboratory for running python functions.
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{screenshot.png}
+    \caption{Colaboratory}
+    \label{}
+\end{figure}
+\section{Python}
+\Large
+Python can be used on a server to create web applications.
+Python can be used alongside software to create workflows.
+Python can connect to database systems. It can also read and modify files.
+Python can be used to handle big data and perform complex mathematics.
+Python can be used for rapid prototyping, or for production-ready software development.
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{Screenshot (2).png}
+    \includegraphics[width=15cm]{Screenshot (3).png}
+    
+    \caption{Python functions}
+    \label{}
+\end{figure}
+
+
+\end{document}
