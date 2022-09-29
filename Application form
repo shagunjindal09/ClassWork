@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate(){
+            var n= document.myForm.Name.value;
+            if(n=="" || n.length<3 || n.length>=8)
+                {
+                    alert("not a valid name");
+                    document.myForm.Name.focus();
+                    return  false;
+                }
+                var emailId=document.myForm.Email.value;
+                if(emailId ==""){
+                    alert("provide valid emial");
+                    document.myForm.Email.focus();
+                    return false;
+                }
+                atpos=emailId.indexOf("@");
+                dotpos=emailId.lastIndexOf(".");
+                if(atpos<1 || (dotpos-atpos<2))
+                {
+                    alert("please enter correct mail");
+                    document.myForm.Email.focus();
+                    return false;
+                }
+                let x=document.myForm.Phone_Number.value;
+                if(isNaN(x)|| x<6000000000 || x>9999999999){
+                    alert("not a valid input");
+                    document.myForm.Phone_Number.focus();
+                    return false;
+                }
+                var c=document.myForm.Zip_code.value;
+                if(z=="" || isNaN(z) || z.length!=6){
+                     alert("provide valid zip code");
+                     document.myForm.Zip_code.focus();
+                     return false;
+                }
+                var c=document.myForm.country.value;
+                if(c== -1){
+                    alert("provide country");
+                    return false;
+                }
+                return (true);
+            
+        }
+
+    </script>
+</head>
+<body bgcolor="sky-blue">
+ <h1 style="text-align: center;">Application Form</h1>
+    <form name="myForm" onsubmit="return(validate());">
+        <table border="5px" cellspacing="5" cellpadding="5" align="center" >
+           
+            <tr>
+                <td>
+                    <label align="right" ><b>Name</b></label></td>
+                 <td> <input type="txt" name="Name" required> </td>   
+                
+            </tr>
+                <tr>
+                    <td>
+                        <Label  align="right"><b>Phone Number</b></Label></td>
+                     <td> <input type="Number" name="Phone_Number"  required ></td>   
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label align="right"><b>Email</b></label></td>
+                     <td><input type="email" name="Email"  required></td>   
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <label align="right"><b>Zip code</b></label></td>
+                    <td> <input type="number" name="Zip_code" required></td>   
+                    
+                </tr>
+
+                <tr> 
+                    <td  required><b> Country</b></td>
+                    <td>
+                        <select name="country">
+                            <option value = "-1" selected>[choose yours]</option>
+                            <option value="1"> India </option>
+                            <option value="2"> UK </option>
+                            <option value="3"> USA </option>
+                        </select>
+                    </td>
+                </tr>
+<tr>
+    <td colspan="4"> 
+         <button type="submit">Submit</button></td>
+</tr>
+               
+
+           
+            
+        </table>
+    </form>
+
+
+
+    
+</body>
+</html>
